@@ -1,0 +1,90 @@
+.inquiry-summary-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+  margin-bottom: 22px;
+}
+
+.inquiry-summary-grid > div {
+  background: #f9fbff;
+  border: 1px solid #dce4f1;
+  border-radius: 13px;
+  padding: 18px;
+  box-shadow: 0 2px 8px rgba(35, 65, 110, 0.04);
+}
+
+.inquiry-summary-grid h2 {
+  margin: 0;
+  color: #1760ed;
+  font-size: 27px;
+  font-weight: 700;
+}
+
+.inquiry-summary-grid p {
+  margin: 5px 0 0;
+  color: #65748b;
+  font-size: 14px;
+}
+
+.inquiry-status {
+  display: inline-block;
+  padding: 5px 12px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.inquiry-status.new {
+  background: #dceaff;
+  color: #1760ed;
+}
+
+.inquiry-status.read {
+  background: #d7f5e1;
+  color: #16834b;
+}
+
+.inquiry-view-btn {
+  background: #e4edff;
+  color: #1760ed;
+  border: 1px solid #d4e1fb;
+  border-radius: 8px;
+  padding: 7px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.inquiry-view-btn:hover {
+  background: #1760ed;
+  color: #fff;
+}
+
+.inquiry-view-btn svg {
+  font-size: 19px;
+}
+
+.inquiry-details p {
+  padding: 9px 0;
+  margin: 0;
+  border-bottom: 1px solid #e6ebf3;
+  color: #405574;
+}
+
+.inquiry-message {
+  background: #f0f4fb;
+  border: 1px solid #e1e8f3;
+  border-radius: 10px;
+  padding: 15px;
+  margin-top: 18px;
+}
+
+.inquiry-message p {
+  border: none;
+  line-height: 1.6;
+}
+
+@media (max-width: 650px) {
+  .inquiry-summary-grid {
+    grid-template-columns: 1fr;
+  }
+}

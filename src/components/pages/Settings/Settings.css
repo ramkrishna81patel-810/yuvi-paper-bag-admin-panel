@@ -1,0 +1,323 @@
+/* Main Page */
+
+.settings-page {
+    width: 100%;
+    color: #34445e;
+}
+
+.settings-heading {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 26px;
+}
+
+.settings-heading h2 {
+    margin: 0 0 7px;
+    font-size: 26px;
+    font-weight: 700;
+    color: #293b56;
+}
+
+.settings-heading p {
+    margin: 0;
+    font-size: 14px;
+    color: #718096;
+}
+
+/* Layout */
+
+.settings-layout {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 22px;
+    align-items: stretch;
+}
+
+/* Cards */
+
+.settings-card {
+    background: #fbfcff;
+    border: 1px solid #dfe6f1;
+    border-radius: 14px;
+    padding: 25px;
+    box-shadow: 0 3px 12px rgba(20, 40, 80, 0.05);
+    min-width: 0;
+}
+
+/* Card Heading */
+
+.settings-card-heading {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    padding-bottom: 22px;
+    border-bottom: 1px solid #e5eaf2;
+    margin-bottom: 22px;
+}
+
+.settings-heading-icon {
+    width: 45px;
+    height: 45px;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 11px;
+    background: #e3ecfc;
+    color: #386bc1;
+}
+
+.settings-heading-icon svg {
+    font-size: 25px;
+}
+
+.notification-icon {
+    background: #e5f0e9;
+    color: #438a63;
+}
+
+.settings-card-heading h3 {
+    margin: 0 0 5px;
+    font-size: 17px;
+    font-weight: 700;
+    color: #34445e;
+}
+
+.settings-card-heading p {
+    margin: 0;
+    font-size: 12px;
+    color: #718096;
+    line-height: 1.5;
+}
+
+/* Profile Header */
+
+.settings-profile-header {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    background: #edf3ff;
+    border: 1px solid #dce7f8;
+    border-radius: 11px;
+    padding: 15px;
+    margin-bottom: 24px;
+}
+
+.settings-avatar {
+    width: 48px !important;
+    height: 48px !important;
+    background: #386bc1 !important;
+    font-size: 20px !important;
+    font-weight: 700 !important;
+}
+
+.settings-profile-header h4 {
+    margin: 0 0 5px;
+    font-size: 15px;
+    font-weight: 700;
+    color: #34445e;
+}
+
+.settings-profile-header span {
+    font-size: 12px;
+    color: #718096;
+}
+
+/* Form */
+
+.settings-form {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.settings-field {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.settings-field label {
+    font-size: 13px;
+    font-weight: 600;
+    color: #52647e;
+}
+
+/* MUI TextField */
+
+.settings-field .MuiOutlinedInput-root {
+    background: #fff;
+    border-radius: 8px;
+    font-size: 13px;
+}
+
+.settings-field .MuiOutlinedInput-notchedOutline {
+    border-color: #d8e0ec;
+}
+
+.settings-field .MuiOutlinedInput-root:hover .MuiOutlinedInput-notchedOutline {
+    border-color: #8ba9d9;
+}
+
+.settings-field .MuiOutlinedInput-root.Mui-focused .MuiOutlinedInput-notchedOutline {
+    border-color: #386bc1;
+    border-width: 1.5px;
+}
+
+/* Buttons */
+
+.settings-actions {
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 5px;
+}
+
+.settings-actions button {
+    background: #386bc1;
+    border-radius: 8px;
+    padding: 10px 20px;
+    font-size: 13px;
+    font-weight: 600;
+    text-transform: none;
+    box-shadow: none;
+}
+
+.settings-actions button:hover {
+    background: #2858a8;
+    box-shadow: 0 4px 10px rgba(56, 107, 193, 0.18);
+}
+
+/* Notification List */
+
+.notification-list {
+    display: flex;
+    flex-direction: column;
+}
+
+.notification-item {
+    display: flex;
+    align-items: center;
+    gap: 13px;
+    padding: 19px 0;
+    border-bottom: 1px solid #e2e8f2;
+}
+
+.notification-item:first-child {
+    padding-top: 5px;
+}
+
+.notification-item:last-child {
+    border-bottom: none;
+}
+
+.notification-item-icon {
+    width: 40px;
+    height: 40px;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 9px;
+    background: #edf3ff;
+    color: #386bc1;
+}
+
+.notification-item-icon svg {
+    font-size: 21px;
+}
+
+.notification-item-content {
+    flex: 1;
+    min-width: 0;
+}
+
+.notification-item-content h4 {
+    margin: 0 0 5px;
+    font-size: 13px;
+    font-weight: 650;
+    color: #34445e;
+}
+
+.notification-item-content p {
+    margin: 0;
+    font-size: 11px;
+    color: #718096;
+    line-height: 1.5;
+}
+
+/* MUI Switch */
+
+.notification-item .MuiSwitch-switchBase.Mui-checked {
+    color: #386bc1;
+}
+
+.notification-item .MuiSwitch-switchBase.Mui-checked+.MuiSwitch-track {
+    background-color: #386bc1;
+    opacity: 0.7;
+}
+
+.notification-save {
+    padding-top: 17px;
+    border-top: 1px solid #e2e8f2;
+}
+
+/* Tablet */
+
+@media (max-width: 1100px) {
+    .settings-layout {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Mobile */
+
+@media (max-width: 600px) {
+    .settings-heading {
+        margin-bottom: 20px;
+    }
+
+    .settings-heading h2 {
+        font-size: 23px;
+    }
+
+    .settings-card {
+        padding: 18px;
+    }
+
+    .settings-card-heading {
+        gap: 11px;
+    }
+
+    .settings-heading-icon {
+        width: 40px;
+        height: 40px;
+    }
+
+    .notification-item {
+        gap: 9px;
+    }
+
+    .notification-item-icon {
+        width: 35px;
+        height: 35px;
+    }
+
+    .notification-item-content p {
+        font-size: 10px;
+    }
+
+    .settings-actions button {
+        width: 100%;
+    }
+}
+
+@media (max-width: 380px) {
+    .settings-card {
+        padding: 14px;
+    }
+
+    .notification-item-content h4 {
+        font-size: 12px;
+    }
+}

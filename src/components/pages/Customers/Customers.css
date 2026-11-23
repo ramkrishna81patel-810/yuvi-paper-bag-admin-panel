@@ -1,0 +1,141 @@
+
+.customers-page {
+  padding: 28px;
+  color: #34445e;
+}
+
+.customers-heading,
+.customers-toolbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.customers-heading {
+  margin-bottom: 25px;
+}
+
+.customers-heading h2 {
+  margin: 0 0 7px;
+  font-size: 26px;
+  font-weight: 700;
+  color: #34445e;
+}
+
+.customers-heading p {
+  margin: 0;
+  color: #718096;
+  font-size: 14px;
+}
+
+.customer-count {
+  background: #e3ecfc;
+  color: #245fc5;
+  padding: 10px 15px;
+  border-radius: 8px;
+  font-size: 13px;
+  font-weight: 600;
+  border: 1px solid #d4e1f7;
+}
+
+.customers-card {
+  background: #fbfcff;
+  border: 1px solid #dfe6f1;
+  border-radius: 12px;
+  padding: 22px;
+  box-shadow: 0 3px 12px rgba(20, 40, 80, 0.05);
+}
+
+.customers-toolbar {
+  margin-bottom: 22px;
+}
+
+.customers-toolbar h3 {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 650;
+  color: #34445e;
+}
+
+.customers-table-wrapper {
+  width: 100%;
+  overflow-x: auto;
+  border: 1px solid #e2e8f2;
+  border-radius: 9px;
+}
+
+.customers-table {
+  width: 100%;
+  min-width: 900px;
+  border-collapse: collapse;
+  text-align: left;
+}
+
+.customers-table th {
+  background: #edf2fa;
+  color: #596b85;
+  font-size: 12px;
+  font-weight: 600;
+  padding: 15px 12px;
+  white-space: nowrap;
+}
+
+.customers-table td {
+  padding: 16px 12px;
+  border-bottom: 1px solid #e7ecf4;
+  color: #596b80;
+  font-size: 13px;
+  white-space: nowrap;
+}
+
+.customers-table tbody tr:hover {
+  background: #f2f6fd;
+}
+
+.customers-table .customer-name {
+  color: #34445e;
+  font-weight: 600;
+}
+
+.customer-empty {
+  text-align: center;
+  padding: 30px !important;
+  color: #718096;
+}
+
+.customer-details p {
+  padding: 8px 0;
+  margin: 0;
+  color: #596b80;
+  border-bottom: 1px solid #e2e8f2;
+}
+
+@media (max-width: 768px) {
+  .customers-page {
+    padding: 20px;
+  }
+
+  .customers-card {
+    padding: 18px;
+  }
+}
+
+@media (max-width: 600px) {
+  .customers-page {
+    padding: 16px;
+  }
+
+  .customers-heading h2 {
+    font-size: 22px;
+  }
+
+  .customers-card {
+    padding: 15px;
+  }
+
+  .customers-toolbar {
+    align-items: flex-start;
+  }
+}
