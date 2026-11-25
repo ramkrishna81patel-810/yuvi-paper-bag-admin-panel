@@ -1,0 +1,7 @@
+$kind: http-request
+url: http://localhost:5000/api/product/add
+method: POST
+body:
+  type: json
+  content: ""
+order: 1000
